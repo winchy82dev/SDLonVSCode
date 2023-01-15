@@ -2,7 +2,6 @@
 ![](./doc/window.png)
 
 This is a basic starting file in C programming language, using SDL2
-that
 (It's only work on windows, and require Mingw32 to be installed)
 
 ## Requirements
