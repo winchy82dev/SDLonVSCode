@@ -47,9 +47,9 @@ You'll find 4 files on the `.vscode` folder :
 
     ```json
     "C_Cpp_Runner.includePaths": [
-    "${workspaceFolder}/**",
-    "C:\\tools\\sdl2-32\\include"
-    ],
+      "${workspaceFolder}/**",
+      "C:\\tools\\sdl2-32\\include"
+      ],
     ```
 
 ### 4. tasks.json
