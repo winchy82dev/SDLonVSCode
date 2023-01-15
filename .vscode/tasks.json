@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "SDL2",
+			"command": "C:/MinGW/bin/gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}\\*.c",
+				"-o",
+				"${workspaceFolder}\\build\\Debug\\outDebug.exe",
+				"-IC:/tools/sdl2-32/include",
+				"-LC:/tools/sdl2-32/lib",
+				"-lmingw32",
+				"-lSDL2main",
+				"-lSDL2",
+				"-lSDL2_image",
+				"-mwindows",
+				""
+			],
+			"options": {
+				"cwd": "C:/MinGW/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/MinGW/bin/gcc.exe"
+		}
+	]
+}
