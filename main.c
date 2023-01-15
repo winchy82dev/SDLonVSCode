@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <SDL2/SDL.h>
 
 #define SCREEN_WIDTH 640
@@ -37,9 +38,9 @@ int main(int argc, char *argv[])
   // SDL_Event - A union that contains structures for the different event types.
   // https://wiki.libsdl.org/SDL_Event
   SDL_Event event;
-  int quit = 1;
+  bool running = true;
 
-  while (quit)
+  while (running)
   {
     // Poll for currently pending events.
     // https://wiki.libsdl.org/SDL_PollEvent
@@ -48,7 +49,7 @@ int main(int argc, char *argv[])
       // https://wiki.libsdl.org/SDL_EventType
       if (event.type == SDL_QUIT)
       {
-        quit = 0;
+        running = false;
       }
 
       // Fill the surface white - Perform a fast fill of a rectangle with a specific color.
